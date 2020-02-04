@@ -2,5 +2,3 @@ github.com/joho/godotenv v1.3.0 h1:Zjp+RcGpHhGlrMbJzXTrZZPrWj+1vfm90La1wgB6Bhc=
 github.com/joho/godotenv v1.3.0/go.mod h1:7hK45KPybAkOC6peb+G5yklZfMxEjkZhHbwpqxOKXbg=
 github.com/julienschmidt/httprouter v1.3.0 h1:U0609e9tgbseu3rBINet9P48AI/D3oJs4dN7jwJOQ1U=
 github.com/julienschmidt/httprouter v1.3.0/go.mod h1:JR6WtHb+2LUe8TCKY3cZOxFyyO8IZAc4RVcycCCAKdM=
-github.com/misostack/ezgo v0.0.0-20200204105451-e46d1573398e h1:bAuw7/Bj/BmYecHl1l9n4HesyozZZY2QQPShbmLXzgU=
-github.com/misostack/ezgo v0.0.0-20200204105451-e46d1573398e/go.mod h1:EeG8FFheTbwP+O7h1pnm59vQtdRCBqP+bPFz/Xc7YL8=

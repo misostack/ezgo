@@ -33,8 +33,10 @@ func loadDefaultWebServerConfig(cfg *WebServerConfig){
 }
 
 func loadConfig(cfg *WebServerConfig) {
+	fmt.Printf("SOMETHING WENT WRONG")
 	cfgPath := cfg.Config
 	env := os.Getenv("EZGO_ENV")
+	env = "heroku"
 	var err error
 	if env == "" { env = "local" }
 	if env == "heroku" { 
