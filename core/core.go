@@ -38,8 +38,9 @@ func loadConfig(cfg *WebServerConfig) {
 	var err error
 	if env == "" { env = "local" }
 	if env == "heroku" { 
+		cfg.Address = "0.0.0.0"
 		cfg.Port, err = strconv.Atoi(os.Getenv("PORT"))
-		fmt.Printf("HEROKU PORT : %v\n", os.Getenv("PORT"))
+		fmt.Printf("HEROKU PORT and Address: %v %v\n", os.Getenv("PORT"), cfg.Address)
 	}	
 	if env != "heroku" && len(cfgPath) == 0 { cfgPath = "./.env." + env }	
 	if env != "heroku" { err = godotenv.Load(cfgPath) }
