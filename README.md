@@ -120,3 +120,17 @@ var ip = flag.Int("flagname", 1234, "help message for flagname")
 - https://golang.org/ref/spec#Constants
 
 > Go does not support struct constants
+
+> Update golang
+
+- https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753
+
+> git clone https://github.com/udhos/update-golang
+> cd update-golang
+> sudo ./update-golang.sh
+
+## Go Mod and say good bye to GOPATH
+
+- https://www.melvinvivas.com/go-version-1-11-modules/
+
+> From Gov1.11

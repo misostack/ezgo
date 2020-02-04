@@ -9,7 +9,7 @@ import (
 func TestParseWebServerConfig(t *testing.T) {
 	cfg := core.WebServerConfig{}
 	core.ParseWebServerConfig(&cfg)
-	fmt.Printf("%v\n", cfg)
+	fmt.Printf("%v\n", cfg)	
 }
 
 // func TestConfigStructToMap(t *testing.T) {
