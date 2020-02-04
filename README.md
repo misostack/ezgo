@@ -55,6 +55,8 @@ System will includes:
 #### Makefiles for go developers
 
 - https://tutorialedge.net/golang/makefiles-for-go-developers/
+- https://sohlich.github.io/post/go_makefile/
+- https://github.com/heroku/go-getting-started
 
 ### C. Release
 
