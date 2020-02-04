@@ -37,8 +37,12 @@ func loadConfig(cfg *WebServerConfig) {
 	env := os.Getenv("EZGO_ENV")
 	var err error
 	if env == "" { env = "local" }
+	if env == "heroku" { 
+		cfg.Port, err = strconv.Atoi(os.Getenv("PORT"))
+		fmt.Printf("HEROKU PORT : %v\n", os.Getenv("PORT"))
+	}	
 	if env != "heroku" && len(cfgPath) == 0 { cfgPath = "./.env." + env }	
-	if env != "heroku" { err = godotenv.Load(cfgPath) }	
+	if env != "heroku" { err = godotenv.Load(cfgPath) }
 	if err != nil {
 		log.Fatalf("Error loading %s file", cfgPath)
 	}
